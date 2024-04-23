@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: loginapi
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+  # DATABASE
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  datasource:
+    url: jdbc:h2:mem:loginSignup
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+
+
+app:
+  jwt:
+    # https://www.javainuse.com/jwtgenerator ???? ???
+    secret: v9y$B&E)H@MbQeThWmZq4t7w!z%C*F-JaNdRfUjXn2r5u8x/A?D(G+KbPeShVkYp
+    expiration:
+      minutes: 10
+  cors:
+    allowed-origins: http://localhost:3000
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    # org.hibernate.SQL: DEBUG

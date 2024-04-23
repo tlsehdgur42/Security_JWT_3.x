@@ -1,0 +1,2 @@
+Log In Time Stamp
+ :: Spring Boot :: ${spring-boot.formatted-version}
